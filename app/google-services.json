@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "67342887062",
+    "project_id": "scafection",
+    "storage_bucket": "scafection.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:67342887062:android:09bd19aac10f3f6c63bab7",
+        "android_client_info": {
+          "package_name": "com.tahufikprojects.scafection"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "67342887062-as1u9c2rajp2no6mb93q5g8bvau3qfa5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCJdnBcia9WsNMgeDakSnN2Q9oQhVfyiY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "67342887062-as1u9c2rajp2no6mb93q5g8bvau3qfa5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
