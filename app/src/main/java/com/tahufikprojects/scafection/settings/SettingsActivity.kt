@@ -25,6 +25,8 @@ class SettingsActivity : AppCompatActivity() {
             preferences.setValues("pt", "")
             preferences.setValues("pass", "")
             preferences.setValues("masuk", "0")
+            preferences.setValues("valve", "0")
+            preferences.setValues("motor", "0")
 
             var i = Intent(this@SettingsActivity, LoginActivity::class.java)
             startActivity(i)

@@ -17,67 +17,66 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView33" />
 
-    <RadioButton
-        android:id="@+id/radioButton5"
-        android:layout_width="80dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="10dp"
-        android:fontFamily="@font/signika_light"
-        android:text="Manual"
-        android:textColor="@android:color/background_light"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="@+id/view16"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton7" />
-
-    <RadioButton
-        android:id="@+id/radioButton6"
-        android:layout_width="80dp"
-        android:layout_height="24dp"
+    <RadioGroup
+        android:id="@+id/motor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:fontFamily="@font/signika_light"
-        android:text="On"
-        android:textColor="@android:color/background_light"
-        android:textSize="12sp"
-        app:layout_constraintStart_toEndOf="@+id/radioButton5"
-        app:layout_constraintTop_toTopOf="@+id/radioButton5" />
-
-    <RadioButton
-        android:id="@+id/radioButton7"
-        android:layout_width="90dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="50dp"
         android:layout_marginTop="5dp"
-        android:fontFamily="@font/signika_light"
-        android:text="Automatic"
-        android:textColor="@android:color/background_light"
-        android:textSize="12sp"
         app:layout_constraintStart_toStartOf="@+id/view16"
-        app:layout_constraintTop_toBottomOf="@+id/textView35" />
+        app:layout_constraintTop_toBottomOf="@+id/textView35">
 
-    <RadioButton
-        android:id="@+id/radioButton8"
-        android:layout_width="80dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:fontFamily="@font/signika_light"
-        android:text="Off"
-        android:textColor="@android:color/background_light"
-        android:textSize="12sp"
-        app:layout_constraintStart_toEndOf="@+id/radioButton5"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton6" />
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:layout_width="102dp"
+            android:layout_height="24dp"
+            android:fontFamily="@font/signika_light"
+            android:text="Automatic"
+            android:textColor="@android:color/background_light"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/view16"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton7" />
+
+        <RadioButton
+            android:id="@+id/radioButton6"
+            android:layout_width="80dp"
+            android:layout_height="24dp"
+
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/signika_light"
+            android:text="On"
+            android:textColor="@android:color/background_light"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/radioButton5"
+            app:layout_constraintTop_toTopOf="@+id/radioButton5" />
+
+
+        <RadioButton
+            android:id="@+id/radioButton8"
+            android:layout_width="80dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/signika_light"
+            android:text="Off"
+            android:textColor="@android:color/background_light"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/radioButton5"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton6" />
+
+    </RadioGroup>
 
     <TextView
         android:id="@+id/textView35"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="@font/signika_light"
         android:text="Motor 1"
         android:textColor="@android:color/background_light"
         android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="@+id/radioButton7"
-        app:layout_constraintTop_toBottomOf="@+id/textView36" />
+        app:layout_constraintStart_toStartOf="@+id/view16"
+        app:layout_constraintTop_toTopOf="@+id/view16" />
 
     <TextView
         android:id="@+id/textView36"
@@ -213,51 +212,62 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView33" />
 
-    <RadioButton
-        android:id="@+id/radioButton2"
-        android:layout_width="80dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="50dp"
+    <RadioGroup
+        android:id="@+id/valve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
-        android:fontFamily="@font/signika_light"
-        android:text="Manual"
-        android:textColor="@android:color/background_light"
-        android:textSize="12sp"
         app:layout_constraintStart_toStartOf="@+id/view15"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton" />
+        app:layout_constraintTop_toTopOf="@+id/view15">
 
-    <RadioButton
-        android:id="@+id/radioButton3"
-        android:layout_width="80dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="8dp"
-        android:fontFamily="@font/signika_light"
-        android:text="On"
-        android:textColor="@android:color/background_light"
-        android:textSize="12sp"
-        app:layout_constraintStart_toEndOf="@+id/radioButton2"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton" />
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/signika_light"
+            android:text="Automatic"
+            android:textColor="@android:color/background_light"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/view15"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton"
+            />
 
-    <RadioButton
-        android:id="@+id/radioButton4"
-        android:layout_width="80dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:fontFamily="@font/signika_light"
-        android:text="Off"
-        android:textColor="@android:color/background_light"
-        android:textSize="12sp"
-        app:layout_constraintStart_toEndOf="@+id/radioButton2"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton3" />
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/signika_light"
+                android:text="On"
+                android:textColor="@android:color/background_light"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/radioButton2"
+                app:layout_constraintTop_toBottomOf="@+id/radioButton" />
+
+            <RadioButton
+                android:id="@+id/radioButton4"
+                android:layout_width="80dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/signika_light"
+                android:text="Off"
+                android:textColor="@android:color/background_light"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/radioButton2"
+                app:layout_constraintTop_toBottomOf="@+id/radioButton3" />
+
+
+
+    </RadioGroup>
 
     <TextView
         android:id="@+id/textView34"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:fontFamily="@font/signika_light"
         android:text="Valve"
         android:textColor="@android:color/background_light"
@@ -266,16 +276,6 @@
         app:layout_constraintStart_toStartOf="@+id/view15"
         app:layout_constraintTop_toTopOf="@+id/view15" />
 
-    <RadioButton
-        android:id="@+id/radioButton"
-        android:layout_width="92dp"
-        android:layout_height="23dp"
-        android:layout_marginStart="50dp"
-        android:fontFamily="@font/signika_light"
-        android:text="Automatic"
-        android:textColor="@android:color/background_light"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="@+id/view15"
-        app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
